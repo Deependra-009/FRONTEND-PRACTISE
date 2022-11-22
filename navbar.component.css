@@ -1,0 +1,40 @@
+.navbar-style-1{
+  /* border: 2px solid black; */
+  margin-left: 60px;
+}
+
+.navbar-style-2 {
+  width: 80%;
+  padding-top: 1%;
+  /* border: 2px solid black; */
+}
+
+.navbar-style-2 ul {
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.navbar-style-2 ul li {
+  font-size: 20px;
+  text-decoration: none;
+  transition: all .5s ease-in;
+}
+
+.navbar-style-2 ul li ::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  transform: scale(0);
+  display: block;
+  background: black;
+  transition: 0.7s;
+}
+.navbar-style-2 ul li a:hover{
+  cursor: pointer;
+}
+
+.navbar-style-2 ul li a:hover::after {
+  transform: scale(1);
+}
